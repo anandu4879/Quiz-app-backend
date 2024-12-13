@@ -22,7 +22,7 @@ public class QuestionController {
         return questionService.getAllQuestion();
     }
     @GetMapping("category/{category}")
-    public List<Questions> getQuestionbyCategory(@PathVariable String category){
-        return questionService.getQuestionbyCategory(category);
+    public List<Questions> getQuestionsbyCategory(@PathVariable String category){
+        return questionService.getQuestionsByCategory(category);
     }
 }
