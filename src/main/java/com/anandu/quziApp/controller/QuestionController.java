@@ -4,6 +4,7 @@ import com.anandu.quziApp.Questions;
 import com.anandu.quziApp.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -19,5 +20,9 @@ public class QuestionController {
     @GetMapping("allquestion")
     public List<Questions> getAllQuestion(){
         return questionService.getAllQuestion();
+    }
+    @GetMapping("category/{category}")
+    public List<Questions> getQuestionbyCategory(@PathVariable String category){
+        return questionService.getQuestionbyCategory(category);
     }
 }
