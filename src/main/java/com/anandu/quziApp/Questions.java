@@ -13,7 +13,7 @@ public class Questions {
     private String option2;
     private String option3;
     private String option4;
-    private String rightAnwer;
+    private String rightAnswer;
     private String difficulty;
 
 }
