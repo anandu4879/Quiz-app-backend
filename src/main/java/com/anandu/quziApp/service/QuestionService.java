@@ -1,6 +1,6 @@
 package com.anandu.quziApp.service;
 
-import com.anandu.quziApp.Questions;
+import com.anandu.quziApp.model.Questions;
 import com.anandu.quziApp.dao.QuestionDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
